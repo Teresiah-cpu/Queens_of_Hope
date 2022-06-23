@@ -1,0 +1,52 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %} 
+{% block extra_head %}
+    <link rel='stylesheet' href="{% static 'accounts/css/login.css' %}">
+{% endblock %}
+{% block content %}
+    <!-- Begin Page Content -->
+    <style>
+      body {
+        /* background-color:transparent; */
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.9;
+        background-size: cover;
+        /* height: 300px; */
+        background-image: url('https://images.unsplash.com/photo-1616938895503-66c89f91bd7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhvcGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+      }
+    </style>
+    <!-- <div style="background-image:url('https://images.pexels.com/photos/6243258/pexels-photo-6243258.jpeg?auto=compress&cs=tinysrgb&w=400'); height: 750px;" > -->
+    <div class="container-fluid" >
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4 ">
+        <h1 s class="h3 mb-0 text-gray-800">Update Profile</h1>
+        </div>          
+
+        <!-- Main Content Here -->
+        <div class="card o-hidden border-0 shadow-lg my-5" style="margin-left: 25%; width: 50%;">
+          <div class="card-body p-0">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <div class="p-5" >
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Contact Us!</h1>
+                  </div>
+                  <form method="POST" enctype="multipart/form-data" style="text-align: center; height: 470px;">
+                      {% csrf_token %}
+                      {{form | crispy}}
+                      <button type="submit" class="btn btn-success ">contact us</button>
+                      <p> <a class="small" href="{% url 'home' %}">Go Back</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div> 
+    <!-- /.container-fluid -->
+{% endblock content %}
