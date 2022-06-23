@@ -40,5 +40,5 @@ class post(models.Model):
     def get_absolute_url(self):
         return reverse('detail-page', kwargs={'slug':self.slug})
 
-   
+
     
