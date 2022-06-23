@@ -13,6 +13,7 @@ This is an application that helps ladies seek couselling services and encourage 
 ```
 Landing Page
 ```
+<!-- <img src="../static/images/blog.png"> -->
 <img src="./static/images/blog.png">
 
 
