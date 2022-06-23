@@ -19,7 +19,7 @@ class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = 'account/profile.html'
 
 
-# class ProfileUpdateView(LoginRequiredMixin,View):
+class ProfileUpdateView(LoginRequiredMixin,View):
     login_url = 'login'
 
     def get(self,request):
