@@ -40,14 +40,6 @@ body {
     height: 60px
 }
 
-#bi {
-    background-color: transparent;
-    background-image: url('https: //cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
-
-}
 
 #landing-section {
     height: calc(100vh - 77px);
@@ -91,26 +83,25 @@ body {
 
 }
 
-#card {
+#card{
     display: flex;
     flex-direction: column;
-    padding: 112px 48px;
+    padding: 92px 40px;
     text-align: center;
     width: 25%;
     box-sizing: border-box;
-
 }
 
 .card1 {
-    background-color: #5acda6;
+    background-color: #089c79;
 }
 
 .card2 {
-    background-color: #91ac41;
+    background-color: #bbf412;
 }
 
 .card3 {
-    background-color: #e4b476;
+    background-color: #1fe8e8;
 }
 
 .card4 {
