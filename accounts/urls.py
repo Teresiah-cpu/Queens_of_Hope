@@ -8,7 +8,7 @@ urlpatterns = [
     path('login/',LoginView.as_view(template_name= 'account/login.html'), name='login'),
     path('logout/',LogoutView.as_view(template_name= 'account/logout.html'), name='logout'),
     path('profile', ProfileView.as_view(), name='profile'),
-    # path('edit-profile/',ProfileUpdateView.as_view(),name= 'edit-profile'),
+    path('edit-profile/',ProfileUpdateView.as_view(),name= 'edit-profile'),
     path('signup', Signup_create_view.as_view(), name= 'signup'),
     path('password-reset/',PasswordResetView.as_view(template_name='account/password_reset_form.html',email_template_name='account/password_reset_email.html'),name= 'password_reset'),
     path('password-reset/done/',PasswordResetDoneView.as_view( template_name= 'account/password_reset_done.html'),name= 'password_reset_done'),
