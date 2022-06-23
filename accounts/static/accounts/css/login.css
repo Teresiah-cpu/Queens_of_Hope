@@ -23,8 +23,8 @@
     
 }
 .pera{
-      width:400px; 
-      height:10px;
+    width:400px; 
+    height:10px;
 }
 .log{
     text-align: center;
@@ -35,11 +35,11 @@
     background-color: #1d70b2;
     color: white;
     cursor: pointer;
-  }
-  
-  .input:hover {
+}
+
+.input:hover {
     background-color: #45a049;
-  }
+}
 
 .field{
     width: 100%;
